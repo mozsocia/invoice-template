@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6E5DC6;
+        }
+        .invoice-details {
+            text-align: right;
+        }
+        .addresses {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #F8F8FF;
+            padding: 20px;
+        }
+        .address {
+            width: 45%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #F0F0FF;
+            color: #6E5DC6;
+        }
+        .totals {
+            text-align: right;
+        }
+        .totals div {
+            padding: 5px 0;
+        }
+        .net-total, .vat-total {
+            border-bottom: 1px solid #ddd;
+        }
+        .total {
+            font-weight: bold;
+            color: #6E5DC6;
+            background-color: #F0F0FF;
+            padding: 10px !important;
+        }
+        .payment-details, .notes {
+            margin-top: 20px;
+        }
+        .payment-details {
+            color: #6E5DC6;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            ⏿⏿⏿ Brand
+        </div>
+        <div class="invoice-details">
+            <div>Date: April 26, 2023</div>
+            <div>Invoice #: BRA-00335</div>
+        </div>
+    </div>
+
+    <div class="addresses">
+        <div class="address">
+            <strong>Supplier Company INC</strong><br>
+            Number: 23456789<br>
+            VAT: 23456789<br>
+            6622 Abshire Mills<br>
+            Port Otfofurt, 05820<br>
+            United States
+        </div>
+        <div class="address">
+            <strong>Customer Company</strong><br>
+            Number: 123456789<br>
+            VAT: 23456789<br>
+            9552 Vandervort Spurs<br>
+            Paradise, 43325<br>
+            United States
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product details</th>
+                <th>Price</th>
+                <th>Qty.</th>
+                <th>VAT</th>
+                <th>Subtotal</th>
+                <th>Subtotal + VAT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Montly accountinc services</td>
+                <td>$150.00</td>
+                <td>1</td>
+                <td>20%</td>
+                <td>$150.00</td>
+                <td>$180.00</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Taxation consulting (hour)</td>
+                <td>$60.00</td>
+                <td>2</td>
+                <td>20%</td>
+                <td>$120.00</td>
+                <td>$144.00</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Bookkeeping services</td>
+                <td>$50.00</td>
+                <td>1</td>
+                <td>20%</td>
+                <td>$50.00</td>
+                <td>$60.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <div class="net-total">Net total: $320.00</div>
+        <div class="vat-total">VAT total: $64.00</div>
+        <div class="total">Total: $384.00</div>
+    </div>
+
+    <div class="payment-details">
+        <strong>PAYMENT DETAILS</strong><br>
+        Banks of Banks<br>
+        Bank/Sort Code: 1234567<br>
+        Account Number: 123456678<br>
+        Payment Reference: BRA-00335
+    </div>
+
+    <div class="notes">
+        <strong>Notes</strong><br>
+        Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+    </div>
+
+    <div class="footer">
+        Supplier Company | info@company.com | +1-202-555-0106
+    </div>
+</body>
+</html>
